@@ -14,7 +14,7 @@ const TimerChallenge = ({ title, targetTime }) => {
     timer.current = setTimeout(() => {
       setTimerExpired(true);
       setTimerRunning(false);
-      dialogRef.current.showModal(); // opening the dialog or .show()
+      dialogRef.current.open(); // refering to exposed .open() method in ResultModal
     }, targetTime * 1000);
   };
 
